@@ -1,2 +1,3 @@
 # HelpinKorea
-This bot helps to foreigners who live in Korea.
+Code for Help in Korea Bot
+This code for Echo bot. It can reply your answer.

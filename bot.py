@@ -23,8 +23,14 @@ async def send_welcome(message: types.Message):
     """
     await message.reply(f"👋Salom { message.from_user.first_name }!\nMen aks sado Bot hisoblanaman!\nAiogram tomonidan quvvatlanganman .")
 
-
-
+@dp.message_handler(content_types=['text'])
+async def greeting(message: types.Message):
+    if message.text == 'Salom':
+        await message.reply("Va alaykum assalom")
+    else:
+        await message.reply("Sizga qanday ma'lumot kerak?🤔")
+          
+          
 @dp.message_handler()
 async def echo(message: types.Message):
     # old style:
